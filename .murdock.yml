@@ -1,0 +1,11 @@
+push:
+  tags:
+    - 'v(\d+\.)?(\d+\.)?(\*|\d+)'
+  branches:
+    - webhook_pushes
+
+pr:
+  enable_comments: True
+
+commit:
+  skip_keywords: ["ci: skip", "ci: no", "ci: ignore"]
